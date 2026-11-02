@@ -67,6 +67,8 @@ hr{border:0;border-top:1px solid var(--line);margin:24px 0}
 .cut .tc{font-family:var(--font-mono);font-size:12.5px;font-weight:600;color:#fff;background:var(--accent);padding:3px 9px;border-radius:6px}
 .cut.key .tc{background:var(--fg)}
 .cut .label{font-family:var(--font-mono);font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--muted)}
+.cut .feat{margin-left:auto;font-family:var(--font-mono);font-size:10.5px;font-weight:600;color:var(--accent-ink);background:var(--accent-soft);padding:3px 9px;border-radius:999px;white-space:nowrap}
+.cut .feat.daily{color:var(--muted);background:transparent;border:1px solid var(--line-strong);font-weight:500}
 .cut>.body{padding:12px 15px;display:flex;flex-direction:column;gap:9px}
 .line{display:grid;grid-template-columns:22px 1fr;gap:9px;align-items:start}
 .line .ic{font-size:14px;line-height:1.5}
@@ -79,6 +81,13 @@ hr{border:0;border-top:1px solid var(--line);margin:24px 0}
 
 .block{border:1px solid var(--line);border-radius:14px;background:var(--surface);padding:16px 18px;margin-top:14px}
 .block h3{font-family:var(--font-mono);font-size:12px;letter-spacing:.8px;text-transform:uppercase;color:var(--accent-ink);margin-bottom:10px}
+.feat3{display:flex;flex-direction:column;gap:15px}
+.fi{border-left:3px solid var(--accent);padding-left:13px}
+.fhead{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:baseline;margin-bottom:4px}
+.fp{font-family:var(--font-mono);font-size:12.5px;font-weight:600;color:var(--accent-ink)}
+.fwhen{font-size:11.5px;color:var(--faint);font-family:var(--font-mono)}
+.fi p{font-size:13.5px;color:var(--muted);margin:0;line-height:1.55}
+.fi .cap{color:var(--fg);font-weight:600}
 ul.steps{list-style:none;counter-reset:s;padding:0;margin:0;display:flex;flex-direction:column;gap:10px}
 ul.steps li{display:grid;grid-template-columns:26px 1fr;gap:11px;align-items:start}
 ul.steps li::before{counter-increment:s;content:counter(s);font-family:var(--font-display);font-weight:700;color:var(--accent);background:var(--accent-soft);width:24px;height:24px;border-radius:7px;display:grid;place-items:center;font-size:12px}
@@ -112,12 +121,12 @@ ul.plain li.r::marker{color:var(--red)}
   <div class="head">
     <div class="eyebrow">DJI Osmo Pocket 4 · Creator Collab · EP.02</div>
     <h1>
-      <span lang="ko"><span class="ko-title">30살 퇴사했음 청년,</span><br>제주에서 뭐 해?</span>
-      <span lang="en"><span class="ko-title">I Quit My Job at 30.</span><br>What Am I Doing in Jeju?</span>
+      <span lang="ko"><span class="ko-title">30살 퇴사했음 청년의</span><br>제주살이</span>
+      <span lang="en"><span class="ko-title">Life in Jeju</span><br>After Quitting My Job at 30</span>
     </h1>
     <p class="subt">
-      <span lang="ko">오즈모로 기록한 제주 스태프의 하루 — Jeju Nomad Staff Vlog</span>
-      <span lang="en">A day of Jeju staff life, filmed on the Osmo — Jeju Nomad Staff Vlog</span>
+      <span lang="ko">오즈모 포켓 4로 기록한 제주 노마드 스태프의 하루</span>
+      <span lang="en">A Jeju nomad staff's day, filmed on the Osmo Pocket 4</span>
     </p>
     <div class="meta">
       <span lang="ko"><b>크리에이터</b> 해니블 @haeniivel</span>
@@ -142,12 +151,21 @@ ul.plain li.r::marker{color:var(--red)}
   <div id="cuts"></div>
 
   <div class="block">
-    <h3><span lang="ko">제품 노출</span><span lang="en">Product Integration</span></h3>
-    <ul class="steps">
-      <li><span class="tx"><span lang="ko">첫 장면에서 오즈모 포켓 4를 렌즈 가까이 가져와 자연스럽게 보여줘요.</span><span lang="en">The opening brings the Osmo Pocket 4 close to the lens, shown naturally.</span></span></li>
-      <li><span class="tx"><span lang="ko">영상의 대부분을 오즈모 포켓 4로 촬영해요.</span><span lang="en">Most of the reel is shot on the Osmo Pocket 4.</span></span></li>
-      <li><span class="tx"><span lang="ko">산책·카페 장면에 오즈모를 실제로 들고 찍는 비하인드 컷을 1–2개 넣어요.</span><span lang="en">Add 1–2 behind-the-scenes cuts of actually holding the Osmo during the walk / café.</span></span></li>
-    </ul>
+    <h3><span lang="ko">제품 노출 · DJI 기능 3가지</span><span lang="en">Product Integration · 3 features</span></h3>
+    <div class="feat3">
+      <div class="fi">
+        <div class="fhead"><span class="fp">① ActiveTrack 7.0</span><span class="fwhen"><span lang="ko">아침 필라테스</span><span lang="en">Morning Pilates</span></span></div>
+        <p><span lang="ko">오즈모를 고정해 두고 운동하고, 아이폰으로 오즈모가 인물을 따라 움직이는 작동 모습을 담아 실제 결과물과 연결해요. 자막 <span class="cap">"혼자 운동하는 모습도 알아서 따라 찍어주고"</span></span><span lang="en">Mount the Osmo and work out; the iPhone captures it tracking her, then cut to the Osmo's own footage. Caption <span class="cap">"It even follows me while I work out alone."</span></span></p>
+      </div>
+      <div class="fi">
+        <div class="fhead"><span class="fp">② <span lang="ko">기계식 3축 짐벌</span><span lang="en">3-axis mechanical gimbal</span></span><span class="fwhen"><span lang="ko">제주 바다 산책</span><span lang="en">Jeju coastal walk</span></span></div>
+        <p><span lang="ko">오즈모를 들고 걷는 비하인드 + 실제 촬영한 바다·산책로를 함께 보여줘요. 걸을 때의 부드러운 움직임이 포인트. 자막 <span class="cap">"걸으면서도 부드럽게 담기는 제주 풍경"</span></span><span lang="en">BTS of holding the Osmo + the actual sea/path footage; the point is how smooth it stays while walking. Caption <span class="cap">"Jeju scenery, smooth even while walking."</span></span></p>
+      </div>
+      <div class="fi">
+        <div class="fhead"><span class="fp">③ <span lang="ko">1인치 CMOS 센서 · 저조도</span><span lang="en">1-inch CMOS · low light</span></span><span class="fwhen"><span lang="ko">밤 작업</span><span lang="en">Night work</span></span></div>
+        <p><span lang="ko">따뜻한 조명만 켠 방, 노트북 작업, 소등 후 취침까지 밤 분위기를 오즈모 실제 촬영분으로 담아요. 우열을 단정하지 않고 결과물로만 보여줘요. 자막 <span class="cap">"밤의 분위기까지 기록하기 🌙"</span></span><span lang="en">Warm-lit room, laptop work, lights-off sleep — the night mood in real Osmo footage, shown through the result, with no superiority claims. Caption <span class="cap">"Capturing even the night mood 🌙"</span></span></p>
+      </div>
+    </div>
   </div>
 
   <div class="block">
@@ -178,27 +196,29 @@ function toast(m){var t=document.getElementById('toast');t.textContent=m;t.class
 function L(ko,en){return'<span lang="ko">'+ko+'</span><span lang="en">'+en+'</span>'}
 
 var CUTS=[
- {t:"0–2s",key:true,lab_ko:"오프닝",lab_en:"Opening",
-  scn_ko:"오즈모를 렌즈 가까이 가져와 화면을 가리는 전환 → 필라테스로 컷. 제목 크게.",scn_en:"Bring the Osmo close to the lens, cover the frame → cut to Pilates. Big title.",
-  ko:"30살 퇴사했음 청년. 제주 가서 뭐 해?",en:"I quit my job at 30. What am I doing in Jeju?",
-  nar_ko:"오즈모로 기록한 30살 퇴사자의 제주 스태프 브이로그!",nar_en:"A Jeju staff vlog from a 30-year-old who quit — all shot on the Osmo!"},
- {t:"2–4s",scn_ko:"방에서 아침 필라테스",scn_en:"Morning Pilates in the room",ko:"08:00 몸부터 깨우기",en:"08:00 Wake the body up first"},
- {t:"4–6s",scn_ko:"오전 스태프 오픈 듀티",scn_en:"Morning staff open duty",ko:"09:00 오늘도 출근 완료",en:"09:00 Clocked in again"},
- {t:"6–8s",scn_ko:"책 읽는 모습",scn_en:"Reading a book",ko:"10:30 잠깐의 독서 시간",en:"10:30 A little reading break"},
- {t:"8–10s",scn_ko:"요가원 방문 & 요가",scn_en:"At the yoga studio",ko:"11:00 요가하러 총총",en:"11:00 Off to yoga"},
- {t:"10–12s",scn_ko:"점심 식사",scn_en:"Lunch",ko:"12:30 점심은 든든하게",en:"12:30 A hearty lunch"},
- {t:"12–15s",scn_ko:"카페에서 커피 마시기",scn_en:"Coffee at a café",ko:"13:30 제주 카페 탐방",en:"13:30 Jeju café hopping"},
- {t:"15–18s",scn_ko:"제주 풍경 보며 산책 (오즈모 들고 촬영 비하인드)",scn_en:"A walk by Jeju scenery (holding the Osmo — BTS)",ko:"15:00 바다 보면서 산책",en:"15:00 A walk by the sea"},
- {t:"18–21s",scn_ko:"숙소로 돌아와 노트북 업무",scn_en:"Back at the stay, laptop work",ko:"16:00 본업 시작",en:"16:00 Back to the real work"},
- {t:"21–24s",scn_ko:"저녁 스태프 마감 듀티",scn_en:"Evening staff closing duty",ko:"19:00 다시 스태프 모드",en:"19:00 Staff mode again"},
- {t:"24–28s",key:true,lab_ko:"엔딩",lab_en:"Ending",
-  scn_ko:"방에서 조명 켜고 업무 → 불 끄고 취침",scn_en:"Lights on, working → lights off, sleep",ko:"22:00 아직 퇴근 못 했어요…",en:"22:00 Still not off work…",
+ {t:"0–2s",key:true,lab_ko:"오프닝",lab_en:"Opening",feat_ko:"제품 등장",feat_en:"Product intro",
+  scn_ko:"오즈모를 렌즈 앞으로 가져오며 화면 전환 → 필라테스로 컷. 제목 크게.",scn_en:"Bring the Osmo toward the lens, swipe the frame → cut to Pilates. Big title.",
+  ko:"30살 퇴사했음 청년의 제주살이",en:"Life in Jeju after quitting my job at 30",
+  nar_ko:"오즈모로 기록한 30살 퇴사했음 청년의 제주살이!",nar_en:"Life in Jeju from a 30-year-old who quit — all on the Osmo!"},
+ {t:"2–5s",feat_ko:"ActiveTrack 7.0",feat_en:"ActiveTrack 7.0",
+  scn_ko:"아침 필라테스 + 아이폰으로 담은 오즈모 인물 추적 작동 모습 → 오즈모 결과물 연결",scn_en:"Morning Pilates + an iPhone shot of the Osmo tracking her → cut to the Osmo's own footage",
+  ko:"혼자 운동하는 모습도 알아서 따라 찍어주고",en:"It even follows me while I work out alone"},
+ {t:"5–8s",daily:true,feat_ko:"일상",feat_en:"Daily",scn_ko:"오전 스태프 오픈 듀티",scn_en:"Morning staff open duty",ko:"오늘도 출근 완료",en:"Clocked in again today"},
+ {t:"8–11s",daily:true,feat_ko:"일상",feat_en:"Daily",scn_ko:"책 읽기 → 요가원",scn_en:"Reading → yoga studio",ko:"틈틈이 책도 읽고 요가도 하고",en:"A little reading and yoga in between"},
+ {t:"11–14s",daily:true,feat_ko:"일상",feat_en:"Daily",scn_ko:"점심 식사",scn_en:"Lunch",ko:"점심은 든든하게!",en:"A hearty lunch!"},
+ {t:"14–17s",feat_ko:"셀프 촬영",feat_en:"Self-film",scn_ko:"카페에서 오즈모를 설치하고 셀프 촬영",scn_en:"Set up the Osmo at a café and film herself",ko:"혼자 카페에서도 편하게 기록",en:"Filming myself easily, even solo at a café"},
+ {t:"17–21s",feat_ko:"3축 짐벌",feat_en:"3-axis gimbal",scn_ko:"오즈모를 들고 제주 바다 산책 (들고 걷는 비하인드 + 실제 촬영 결과물)",scn_en:"Walking the Jeju coast with the Osmo (BTS of holding it + the actual footage)",ko:"걸으면서 찍는 제주 풍경도 부드럽게",en:"Jeju scenery stays smooth even while walking"},
+ {t:"21–24s",daily:true,feat_ko:"일상",feat_en:"Daily",scn_ko:"숙소로 돌아와 노트북 업무",scn_en:"Back at the stay, laptop work",ko:"돌아와서 본업 시작",en:"Back home, on to the real work"},
+ {t:"24–27s",daily:true,feat_ko:"일상",feat_en:"Daily",scn_ko:"저녁 스태프 마감 듀티",scn_en:"Evening staff closing duty",ko:"다시 스태프 모드 ON",en:"Staff mode ON again"},
+ {t:"27–30s",key:true,lab_ko:"엔딩",lab_en:"Ending",feat_ko:"저조도 · 1인치 센서",feat_en:"Low-light · 1\" sensor",
+  scn_ko:"따뜻한 조명만 켠 방에서 노트북 작업 → 소등하고 취침",scn_en:"Working in a warm-lit room → lights off, sleep",
+  ko:"밤의 분위기까지 기록하고 하루 끝!",en:"Capturing even the night mood — day done!",
   nar_ko:"퇴사했는데 어째 더 바쁜 것 같기도…? ㅋㅋ",nar_en:"I quit my job… so why am I even busier? lol"}
 ];
 var box=document.getElementById('cuts');
 CUTS.forEach(function(c,i){
   var d=document.createElement('div');d.className='cut'+(c.key?' key':'');
-  var top='<div class="top"><span class="tc">'+c.t+'</span><span class="label">'+(c.lab_ko?L(c.lab_ko,c.lab_en):('#'+(i+1)))+'</span></div>';
+  var top='<div class="top"><span class="tc">'+c.t+'</span>'+(c.lab_ko?'<span class="label">'+L(c.lab_ko,c.lab_en)+'</span>':'')+'<span class="feat'+(c.daily?' daily':'')+'">'+L(c.feat_ko,c.feat_en)+'</span></div>';
   var body='<div class="body">';
   body+='<div class="line scn"><span class="ic">🎥</span><span class="tx">'+L(c.scn_ko,c.scn_en)+'</span></div>';
   body+='<div class="line cap"><span class="ic">💬</span><span class="tx"><div class="ko">'+c.ko+'</div><div class="en">'+c.en+'</div></span></div>';
@@ -227,7 +247,7 @@ document.getElementById('copyScript').onclick=function(){
   var en=root.getAttribute('data-lang')==='en';
   var head=en?'EP.02 — Jeju Nomad Staff Vlog\n"I Quit My Job at 30. What Am I Doing in Jeju?"\nCreator: Haeniivel @haeniivel · DJI Osmo Pocket 4 · ~28–30s\n\n':'EP.02 — 제주 노마드 스태프 브이로그\n「30살 퇴사했음 청년, 제주 가서 뭐 해?」\n크리에이터: 해니블 @haeniivel · DJI Osmo Pocket 4 · 약 28–30초\n\n';
   var body=CUTS.map(function(c){
-    var s='['+c.t+'] '+(en?c.scn_en:c.scn_ko)+'\n💬 '+(en?c.en:c.ko);
+    var s='['+c.t+'] ('+(en?c.feat_en:c.feat_ko)+') '+(en?c.scn_en:c.scn_ko)+'\n💬 '+(en?c.en:c.ko);
     if(c.nar_ko)s+='\n🎙 "'+(en?c.nar_en:c.nar_ko)+'"';
     return s;
   }).join('\n\n');
